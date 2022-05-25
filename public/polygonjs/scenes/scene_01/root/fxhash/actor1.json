@@ -1,0 +1,345 @@
+{
+	"type": "actor",
+	"nodes": {
+		"onTick1": {
+			"type": "onTick"
+		},
+		"rayFromCursor1": {
+			"type": "rayFromCursor",
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "ray",
+						"type": "Ray",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"rayIntersectPlane1": {
+			"type": "rayIntersectPlane",
+			"inputs": [
+				{
+					"index": 0,
+					"node": "rayFromCursor1",
+					"output": "ray"
+				},
+				{
+					"index": 1,
+					"node": "plane1",
+					"output": "plane"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "Ray",
+						"type": "Ray",
+						"isArray": false
+					},
+					{
+						"name": "Plane",
+						"type": "Plane",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "position",
+						"type": "Vector3",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"plane1": {
+			"type": "plane",
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "plane",
+						"type": "Plane",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"getObjectProperty1": {
+			"type": "getObjectProperty"
+		},
+		"distance1": {
+			"type": "distance",
+			"params": {
+				"v0": {
+					"type": "vector3",
+					"default_value": [
+						1,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"v1": {
+					"type": "vector3",
+					"default_value": [
+						0,
+						1,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "getObjectProperty1",
+					"output": "position"
+				},
+				{
+					"index": 1,
+					"node": "rayIntersectPlane1",
+					"output": "position"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "v0",
+						"type": "Vector3",
+						"isArray": false
+					},
+					{
+						"name": "v1",
+						"type": "Vector3",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"clamp1": {
+			"type": "clamp",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"min": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				},
+				"max": {
+					"type": "float",
+					"default_value": 1,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "distance1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float",
+						"isArray": false
+					},
+					{
+						"name": "min",
+						"type": "float",
+						"isArray": false
+					},
+					{
+						"name": "max",
+						"type": "float",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"complement1": {
+			"type": "complement",
+			"params": {
+				"value": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "clamp1",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "value",
+						"type": "float",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "complement",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"vec3ToFloat1": {
+			"type": "vec3ToFloat",
+			"params": {
+				"vec3": {
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "getObjectProperty1",
+					"output": "position"
+				}
+			]
+		},
+		"floatToVec3_1": {
+			"type": "floatToVec3",
+			"params": {
+				"x": {
+					"overriden_options": {}
+				},
+				"y": {
+					"overriden_options": {}
+				},
+				"z": {
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "vec3ToFloat1",
+					"output": "x"
+				},
+				{
+					"index": 1,
+					"node": "complement1",
+					"output": "complement"
+				},
+				{
+					"index": 2,
+					"node": "vec3ToFloat1",
+					"output": "z"
+				}
+			]
+		},
+		"setObjectPosition1": {
+			"type": "setObjectPosition",
+			"params": {
+				"position": {
+					"overriden_options": {}
+				},
+				"lerp": {
+					"raw_input": 0.07,
+					"overriden_options": {}
+				},
+				"updateMatrix": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 5,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onTick1",
+					"output": "trigger"
+				},
+				null,
+				{
+					"index": 2,
+					"node": "floatToVec3_1",
+					"output": "vec3"
+				},
+				{
+					"index": 3,
+					"node": "getObjectAttribute1",
+					"output": "val"
+				}
+			]
+		},
+		"getObjectAttribute1": {
+			"type": "getObjectAttribute",
+			"params": {
+				"attribName": "lerp"
+			},
+			"connection_points": {
+				"in": [
+					{
+						"name": "Object3D",
+						"type": "Object3D",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		}
+	},
+	"inputs": [
+		"switch1"
+	],
+	"flags": {
+		"display": true
+	},
+	"selection": [
+		"setObjectPosition1"
+	],
+	"cloned_state_overriden": true
+}

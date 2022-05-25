@@ -1,0 +1,236 @@
+{
+	"type": "geo",
+	"nodes": {
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"t": [
+					"-$CEX",
+					"-$CEY",
+					"-$CEZ"
+				]
+			},
+			"inputs": [
+				"text_to2"
+			]
+		},
+		"bboxScatter1": {
+			"type": "bboxScatter",
+			"params": {
+				"stepSize": "js(\"$fxhashFeatures.blockSize\")"
+			},
+			"inputs": [
+				"transform2"
+			]
+		},
+		"transform3": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0,
+					0.3495987537103886,
+					0
+				]
+			},
+			"inputs": [
+				"bboxScatter1"
+			]
+		},
+		"ray1": {
+			"type": "ray",
+			"params": {
+				"useNormals": 0,
+				"transferFaceNormals": 0,
+				"addDistAttribute": 1
+			},
+			"inputs": [
+				"transform3",
+				"transform4"
+			]
+		},
+		"delete1": {
+			"type": "delete",
+			"params": {
+				"byExpression": 1,
+				"expression": "@dist<0"
+			},
+			"inputs": [
+				"ray1"
+			]
+		},
+		"copy1": {
+			"type": "copy",
+			"params": {
+				"copyAttributes": 1,
+				"attributesToCopy": "lerp restP"
+			},
+			"inputs": [
+				"transform6",
+				"restAttributes1"
+			]
+		},
+		"transform4": {
+			"type": "transform",
+			"params": {
+				"r": [
+					-90,
+					0,
+					0
+				]
+			},
+			"inputs": [
+				"transform1"
+			]
+		},
+		"transform5": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0,
+					"0.5*ch(\"../bboxScatter1/stepSize\")",
+					0
+				]
+			},
+			"inputs": [
+				"delete1"
+			]
+		},
+		"transform2": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0.21000000000000002,
+					0,
+					0
+				],
+				"scale": 1.3
+			},
+			"inputs": [
+				"transform4"
+			]
+		},
+		"text_to2": {
+			"type": "text",
+			"params": {
+				"font": "fonts/lcd-solid-font/LcdSolid-VPzB.ttf?timestamp=1577509204000",
+				"text": "FXHASH",
+				"type": 1,
+				"extrude": 0.18,
+				"segments": 4,
+				"justifyMode": 2
+			}
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshStandard1"
+			},
+			"inputs": [
+				"attribPromote1"
+			],
+			"cloned_state_overriden": true
+		},
+		"noise1": {
+			"type": "noise",
+			"params": {
+				"amplitude": 0.54,
+				"freq": [
+					0.3999999999999999,
+					0.3999999999999999,
+					0.3999999999999999
+				],
+				"attribName": "lerp"
+			},
+			"inputs": [
+				"attribCreate1"
+			]
+		},
+		"attribCreate1": {
+			"type": "attribCreate",
+			"params": {
+				"name": "lerp",
+				"value1": 0.5
+			},
+			"inputs": [
+				"transform5"
+			]
+		},
+		"attribCreate2": {
+			"type": "attribCreate",
+			"params": {
+				"name": "lerp",
+				"value1": "0.2*clamp(@lerp, 0, 1)"
+			},
+			"inputs": [
+				"noise1"
+			]
+		},
+		"switch1": {
+			"type": "switch",
+			"params": {
+				"input": "js(\"$fxhashFeatures.material\")"
+			},
+			"inputs": [
+				"material1",
+				"material2",
+				"material3"
+			]
+		},
+		"material2": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshStandard2"
+			},
+			"inputs": [
+				"attribPromote1"
+			],
+			"cloned_state_overriden": true
+		},
+		"material3": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshStandardBuilder3"
+			},
+			"inputs": [
+				"attribPromote1"
+			],
+			"cloned_state_overriden": true
+		},
+		"roundedBox1": {
+			"type": "roundedBox"
+		},
+		"transform6": {
+			"type": "transform",
+			"params": {
+				"scale": "0.9*ch(\"../bboxScatter1/stepSize\")"
+			},
+			"inputs": [
+				"roundedBox1"
+			]
+		},
+		"restAttributes1": {
+			"type": "restAttributes",
+			"params": {
+				"tnormal": 0
+			},
+			"inputs": [
+				"attribCreate2"
+			]
+		},
+		"attribPromote1": {
+			"type": "attribPromote",
+			"params": {
+				"classFrom": 1,
+				"classTo": 0,
+				"name": "restP"
+			},
+			"inputs": [
+				"copy1"
+			],
+			"cloned_state_overriden": true
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

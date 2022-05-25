@@ -1,0 +1,450 @@
+{
+	"nodes": {
+		"lights": {
+			"pos": [
+				-50,
+				-150
+			],
+			"nodes": {
+				"areaLight1": {
+					"pos": [
+						50,
+						-300
+					]
+				},
+				"polarTransform1": {
+					"pos": [
+						100,
+						0
+					]
+				},
+				"hemisphereLight1": {
+					"pos": [
+						-100,
+						0
+					]
+				},
+				"merge1": {
+					"pos": [
+						0,
+						200
+					]
+				},
+				"spotLight1": {
+					"pos": [
+						300,
+						-300
+					]
+				},
+				"merge2": {
+					"pos": [
+						100,
+						-150
+					]
+				}
+			}
+		},
+		"cameras": {
+			"pos": [
+				-50,
+				-50
+			],
+			"nodes": {
+				"perspectiveCamera_MAIN": {
+					"pos": [
+						-100,
+						-50
+					]
+				},
+				"perspectiveCamera_DEBUG": {
+					"pos": [
+						150,
+						-50
+					]
+				},
+				"polarTransform1": {
+					"pos": [
+						-100,
+						250
+					]
+				},
+				"polarTransform2": {
+					"pos": [
+						150,
+						250
+					]
+				},
+				"merge1": {
+					"pos": [
+						0,
+						400
+					]
+				},
+				"cameraControls1": {
+					"pos": [
+						-100,
+						150
+					],
+					"nodes": {
+						"cameraOrbitControls1": {
+							"pos": [
+								0,
+								0
+							]
+						}
+					}
+				},
+				"cameraControls2": {
+					"pos": [
+						150,
+						150
+					],
+					"nodes": {
+						"cameraOrbitControls1": {
+							"pos": [
+								0,
+								0
+							]
+						}
+					}
+				}
+			}
+		},
+		"fxhash": {
+			"pos": [
+				200,
+				-50
+			],
+			"nodes": {
+				"transform1": {
+					"pos": [
+						0,
+						-550
+					]
+				},
+				"bboxScatter1": {
+					"pos": [
+						-150,
+						-100
+					]
+				},
+				"transform3": {
+					"pos": [
+						-100,
+						100
+					]
+				},
+				"ray1": {
+					"pos": [
+						0,
+						200
+					]
+				},
+				"delete1": {
+					"pos": [
+						0,
+						300
+					]
+				},
+				"copy1": {
+					"pos": [
+						-150,
+						950
+					]
+				},
+				"transform4": {
+					"pos": [
+						0,
+						-450
+					]
+				},
+				"transform5": {
+					"pos": [
+						0,
+						400
+					]
+				},
+				"transform2": {
+					"pos": [
+						-150,
+						-250
+					]
+				},
+				"text_to2": {
+					"pos": [
+						0,
+						-700
+					]
+				},
+				"material1": {
+					"pos": [
+						-200,
+						1200
+					]
+				},
+				"noise1": {
+					"pos": [
+						0,
+						650
+					]
+				},
+				"attribCreate1": {
+					"pos": [
+						0,
+						550
+					]
+				},
+				"attribCreate2": {
+					"pos": [
+						0,
+						750
+					]
+				},
+				"switch1": {
+					"pos": [
+						-200,
+						1550
+					]
+				},
+				"material2": {
+					"pos": [
+						-50,
+						1300
+					]
+				},
+				"material3": {
+					"pos": [
+						100,
+						1400
+					]
+				},
+				"roundedBox1": {
+					"pos": [
+						-300,
+						700
+					]
+				},
+				"transform6": {
+					"pos": [
+						-300,
+						800
+					]
+				},
+				"restAttributes1": {
+					"pos": [
+						0,
+						850
+					]
+				},
+				"attribPromote1": {
+					"pos": [
+						-150,
+						1050
+					]
+				},
+				"actor1": {
+					"pos": [
+						-200,
+						1700
+					],
+					"nodes": {
+						"onTick1": {
+							"pos": [
+								100,
+								-500
+							]
+						},
+						"rayFromCursor1": {
+							"pos": [
+								-400,
+								250
+							]
+						},
+						"rayIntersectPlane1": {
+							"pos": [
+								-250,
+								300
+							]
+						},
+						"plane1": {
+							"pos": [
+								-400,
+								350
+							]
+						},
+						"getObjectProperty1": {
+							"pos": [
+								-250,
+								50
+							]
+						},
+						"distance1": {
+							"pos": [
+								-100,
+								150
+							]
+						},
+						"clamp1": {
+							"pos": [
+								50,
+								200
+							]
+						},
+						"complement1": {
+							"pos": [
+								150,
+								200
+							]
+						},
+						"vec3ToFloat1": {
+							"pos": [
+								50,
+								0
+							]
+						},
+						"floatToVec3_1": {
+							"pos": [
+								350,
+								0
+							]
+						},
+						"setObjectPosition1": {
+							"pos": [
+								600,
+								-100
+							]
+						},
+						"getObjectAttribute1": {
+							"pos": [
+								450,
+								200
+							]
+						}
+					}
+				},
+				"MAT": {
+					"pos": [
+						-450,
+						1050
+					],
+					"nodes": {
+						"meshStandard1": {
+							"pos": [
+								0,
+								100
+							]
+						},
+						"meshStandard2": {
+							"pos": [
+								0,
+								200
+							]
+						},
+						"meshStandardBuilder3": {
+							"pos": [
+								0,
+								300
+							],
+							"nodes": {
+								"constant1": {
+									"pos": [
+										50,
+										-350
+									]
+								},
+								"globals1": {
+									"pos": [
+										-550,
+										0
+									]
+								},
+								"output1": {
+									"pos": [
+										350,
+										-150
+									]
+								},
+								"attribute1": {
+									"pos": [
+										-450,
+										-150
+									]
+								},
+								"length1": {
+									"pos": [
+										-300,
+										-150
+									]
+								},
+								"add1": {
+									"pos": [
+										-200,
+										50
+									]
+								},
+								"multAdd1": {
+									"pos": [
+										-350,
+										250
+									]
+								},
+								"oklabToRgb1": {
+									"pos": [
+										150,
+										50
+									]
+								},
+								"floatToVec3_1": {
+									"pos": [
+										0,
+										50
+									]
+								},
+								"cycle1": {
+									"pos": [
+										-100,
+										50
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"floor": {
+			"pos": [
+				200,
+				-150
+			],
+			"nodes": {
+				"plane1": {
+					"pos": [
+						0,
+						-150
+					]
+				},
+				"material1": {
+					"pos": [
+						0,
+						0
+					]
+				},
+				"MAT": {
+					"pos": [
+						-200,
+						0
+					],
+					"nodes": {
+						"meshStandard1": {
+							"pos": [
+								0,
+								0
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

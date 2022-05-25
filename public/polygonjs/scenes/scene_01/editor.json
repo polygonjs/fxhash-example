@@ -1,0 +1,353 @@
+{
+	"multiple_panel": {
+		"split_ratio": 0.3364153627311522,
+		"split_panel0": {
+			"split_ratio": 0.6406976744186047,
+			"split_panel0": {
+				"panelTypes": [
+					"viewer"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"camera": "/cameras/cameras:sopGroup/perspectiveCamera_MAIN",
+					"linkIndex": 1
+				}
+			},
+			"split_panel1": {
+				"panelTypes": [
+					"params",
+					"spreadsheet"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"active_folder": null,
+					"linkIndex": 1
+				}
+			},
+			"split_mode": "vertical"
+		},
+		"split_panel1": {
+			"panelTypes": [
+				"network",
+				"params",
+				"viewer"
+			],
+			"currentPanelIndex": 0,
+			"panel_data": {
+				"camera": {
+					"position": {
+						"x": 104.60789821917392,
+						"y": -1379.862552982892
+					},
+					"zoom": 0.7430000000000001
+				},
+				"history": {
+					"2": {
+						"position": {
+							"x": -65.014245014245,
+							"y": 116.42450142450139
+						},
+						"zoom": 0.866666666666667
+					},
+					"34": {
+						"position": {
+							"x": -34.18493608542506,
+							"y": 187.78172138476162
+						},
+						"zoom": 0.7170000000000002
+					},
+					"60": {
+						"position": {
+							"x": -133.84615384615392,
+							"y": -65.7692307692306
+						},
+						"zoom": 0.866666666666667
+					},
+					"86": {
+						"position": {
+							"x": 104.60789821917392,
+							"y": -1379.862552982892
+						},
+						"zoom": 0.7430000000000001
+					},
+					"100": {
+						"position": {
+							"x": -195.61215629522428,
+							"y": 1.1548480463096915
+						},
+						"zoom": 0.6910000000000002
+					},
+					"112": {
+						"position": {
+							"x": 77.21012097032363,
+							"y": -870.8341908901642
+						},
+						"zoom": 0.40699999999999986
+					},
+					"131": {
+						"position": {
+							"x": -175.3846153846153,
+							"y": -52.69230769230768
+						},
+						"zoom": 0.866666666666667
+					},
+					"157": {
+						"position": {
+							"x": -64.10256410256409,
+							"y": -45.58404558404557
+						},
+						"zoom": 0.7020000000000002
+					},
+					"324": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.866666666666667
+					},
+					"377": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.7020000000000002
+					},
+					"442": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.7020000000000002
+					},
+					"535": {
+						"position": {
+							"x": -64.10256410256409,
+							"y": -45.58404558404557
+						},
+						"zoom": 0.7020000000000002
+					},
+					"668": {
+						"position": {
+							"x": -364.751552795031,
+							"y": 119.40993788819877
+						},
+						"zoom": 0.8050000000000003
+					},
+					"781": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.7170000000000002
+					},
+					"782": {
+						"position": {
+							"x": 0,
+							"y": -200
+						},
+						"zoom": 0.7430000000000001
+					},
+					"937": {
+						"position": {
+							"x": -35.82089552238805,
+							"y": -89.55223880597012
+						},
+						"zoom": 0.6700000000000002
+					},
+					"1013": {
+						"position": {
+							"x": -158.41153846153847,
+							"y": -26.634615384615394
+						},
+						"zoom": 1.069958847736626
+					},
+					"1034": {
+						"position": {
+							"x": 114.00188719666257,
+							"y": -30.028504192225846
+						},
+						"zoom": 0.8230000000000002
+					},
+					"1068": {
+						"position": {
+							"x": 16.58163265306122,
+							"y": -17.85714285714285
+						},
+						"zoom": 0.7840000000000003
+					},
+					"1572": {
+						"position": {
+							"x": 50,
+							"y": 50
+						},
+						"zoom": 0.6700000000000002
+					},
+					"1693": {
+						"position": {
+							"x": 84.29412570176639,
+							"y": -15.5449815144461
+						},
+						"zoom": 0.8720000000000003
+					}
+				},
+				"linkIndex": 1
+			}
+		},
+		"split_mode": "horizontal"
+	},
+	"currentNodes": [
+		"/fxhash",
+		"/fxhash",
+		"/fxhash",
+		"/fxhash",
+		"/fxhash",
+		"/fxhash",
+		"/fxhash",
+		"/fxhash"
+	],
+	"navigationHistory": {
+		"nodePaths": {
+			"1": [
+				"/fxhash",
+				"/",
+				"/floor",
+				"/",
+				"/lights",
+				"/",
+				"/lights",
+				"/",
+				"/cameras",
+				"/",
+				"/fxhash",
+				"/",
+				"/cameras",
+				"/",
+				"/fxhash",
+				"/",
+				"/lights",
+				"/",
+				"/fxhash",
+				"/fxhash/actor1",
+				"/fxhash",
+				"/",
+				"/lights",
+				"/",
+				"/fxhash",
+				"/",
+				"/floor",
+				"/",
+				"/floor",
+				"/floor/MAT",
+				"/floor",
+				"/",
+				"/lights",
+				"/",
+				"/floor",
+				"/",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/",
+				"/lights",
+				"/",
+				"/cameras",
+				"/cameras/cameraControls1",
+				"/cameras",
+				"/",
+				"/floor",
+				"/",
+				"/fxhash",
+				"/",
+				"/cameras",
+				"/cameras/cameraControls1",
+				"/cameras",
+				"/",
+				"/fxhash",
+				"/fxhash/actor1",
+				"/fxhash",
+				"/fxhash/actor1",
+				"/fxhash",
+				"/fxhash/actor1",
+				"/fxhash",
+				"/",
+				"/cameras",
+				"/",
+				"/lights",
+				"/",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash/MAT",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash/MAT/meshStandardBuilder3",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash/MAT/meshStandardBuilder3",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash",
+				"/",
+				"/fxhash",
+				"/fxhash/MAT",
+				"/fxhash/MAT/meshStandardBuilder3",
+				"/fxhash/MAT",
+				"/fxhash"
+			],
+			"2": [
+				"/fxhash"
+			],
+			"3": [
+				"/fxhash"
+			],
+			"4": [
+				"/fxhash"
+			],
+			"5": [
+				"/fxhash"
+			],
+			"6": [
+				"/fxhash"
+			],
+			"7": [
+				"/fxhash"
+			],
+			"8": [
+				"/fxhash"
+			]
+		},
+		"index": {
+			"1": 99,
+			"2": 0,
+			"3": 0,
+			"4": 0,
+			"5": 0,
+			"6": 0,
+			"7": 0,
+			"8": 0
+		}
+	},
+	"fullscreenPanelId": null,
+	"saveOptions": {
+		"createExport": true,
+		"compressJs": false,
+		"createZip": true,
+		"publishToIntegrations": false
+	},
+	"paramsModal": []
+}

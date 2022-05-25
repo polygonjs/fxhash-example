@@ -1,0 +1,58 @@
+{
+	"type": "geo",
+	"nodes": {
+		"areaLight1": {
+			"type": "areaLight",
+			"params": {
+				"intensity": 1.58,
+				"width": 3,
+				"height": 3.2
+			}
+		},
+		"polarTransform1": {
+			"type": "polarTransform",
+			"params": {
+				"longitude": 129.6,
+				"latitude": 46.8,
+				"depth": 4.6
+			},
+			"inputs": [
+				"merge2"
+			]
+		},
+		"hemisphereLight1": {
+			"type": "hemisphereLight",
+			"params": {
+				"intensity": 0.38
+			}
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"hemisphereLight1",
+				"polarTransform1"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"spotLight1": {
+			"type": "spotLight",
+			"params": {
+				"penumbra": 0.66,
+				"decay": 0.16,
+				"castShadow": 1
+			}
+		},
+		"merge2": {
+			"type": "merge",
+			"inputs": [
+				"areaLight1",
+				"spotLight1"
+			]
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

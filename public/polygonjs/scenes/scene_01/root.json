@@ -1,0 +1,10 @@
+{
+	"type": "root",
+	"nodes": {},
+	"params": {
+		"mainCameraPath": "*/perspectiveCamera_MAIN"
+	},
+	"selection": [
+		"fxhash"
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"type": "geo",
+	"nodes": {
+		"perspectiveCamera_MAIN": {
+			"type": "perspectiveCamera"
+		},
+		"perspectiveCamera_DEBUG": {
+			"type": "perspectiveCamera"
+		},
+		"polarTransform1": {
+			"type": "polarTransform",
+			"params": {
+				"longitude": 360,
+				"latitude": 50.4,
+				"depth": 6.9
+			},
+			"inputs": [
+				"cameraControls1"
+			]
+		},
+		"polarTransform2": {
+			"type": "polarTransform",
+			"params": {
+				"longitude": 342,
+				"latitude": 32.4,
+				"depth": 6.7
+			},
+			"inputs": [
+				"cameraControls2"
+			]
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"polarTransform1",
+				"polarTransform2"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"flags": {
+		"display": true
+	},
+	"selection": [
+		"polarTransform1"
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"type": "materialsNetwork",
+	"nodes": {
+		"meshStandard1": {
+			"type": "meshStandard",
+			"params": {
+				"color": [
+					0.3764705882352941,
+					0.7529411764705882,
+					0.9411764705882353
+				],
+				"metalness": 0,
+				"roughness": 1
+			}
+		},
+		"meshStandard2": {
+			"type": "meshStandard",
+			"params": {
+				"color": [
+					0.40784313725490196,
+					0.25098039215686274,
+					0.7686274509803922
+				],
+				"metalness": 0.31,
+				"roughness": 0.17
+			}
+		}
+	}
+}
