@@ -14,10 +14,10 @@
   resolved "https://registry.yarnpkg.com/@jscad/modeling/-/modeling-2.9.3.tgz#b058015b82fb6fd54257f32510ce4b8cc491d257"
   integrity sha512-UnSKU1OAl5g93sh84VnDxF/EMGsUBIZuhD1PjkCh3Gxaut3p+39GTTF5MHYhGFEfvQKbhXQHVbtoE+mdohQuxg==
 
-"@polygonjs/polygonjs@1.1.262":
-  version "1.1.262"
-  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.1.262.tgz#7e30d6a33c086292950d0ba07ddc5087736ae83a"
-  integrity sha512-uunMzdzFDsJYUfAUABp+W1DkaBpSfY9SLi7Qn8F+RrGt+kTjNMo0aI3cob/jyoG30xbXxtomIe/v9xJP0cUr5Q==
+"@polygonjs/polygonjs@1.1.263":
+  version "1.1.263"
+  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.1.263.tgz#fc1fc9e71bc1f7a661237dad40b62238acb9e42c"
+  integrity sha512-cOfRV3n1rszksxUi6J2FqGowEKVly0lejyZmhd92B7GMBwR6gAKMpnwAs92B4kOGKxCEAirxis4Egb4zZ0kJAw==
   dependencies:
     "@jscad/modeling" "2.9.3"
     "@types/three" "0.139.0"
@@ -698,12 +698,12 @@ path-to-regexp@0.1.7:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
-polygonjs-editor@1.1.262-1:
-  version "1.1.262-1"
-  resolved "https://registry.yarnpkg.com/polygonjs-editor/-/polygonjs-editor-1.1.262-1.tgz#5cede9e6c5ac033c577bbc3bb35a8788311c805c"
-  integrity sha512-B5WyHvCLMn68WMY0a/fRtGt9zjREvuqBZouaMo5aD4buolb4XAk+f+zpG7cmNXG8CGQUZRz1dqyAeGXvhPFn6g==
+polygonjs-editor@1.1.263-1:
+  version "1.1.263-1"
+  resolved "https://registry.yarnpkg.com/polygonjs-editor/-/polygonjs-editor-1.1.263-1.tgz#46e233f104ba7ed124bcb20a72c37e3bcad8edc3"
+  integrity sha512-Yb/itJen0i3AWhSE3cqtyFKp5sqI7YWWF72BPuuBG6OtXuVtUXs43s3mHzzcIPDV9SfzBu5FzcR2d9gfiXpQKA==
   dependencies:
-    "@polygonjs/polygonjs" "1.1.262"
+    "@polygonjs/polygonjs" "1.1.263"
     btoa "1.2.1"
     chalk "4.1.0"
     cors "2.8.5"

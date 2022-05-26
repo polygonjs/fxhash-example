@@ -7,6 +7,6 @@
 		"polygon": "polygonjs-editor --port=8091"
 	},
 	"dependencies": {
-		"polygonjs-editor": "1.1.262-1"
+		"polygonjs-editor": "1.1.263-1"
 	}
 }

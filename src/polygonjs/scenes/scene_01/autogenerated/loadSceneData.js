@@ -1,18 +1,18 @@
 import {SceneDataManifestImporter} from '@polygonjs/polygonjs/dist/src/engine/io/manifest/import/SceneData';
 const manifest = {
-	properties: '1653519530862',
-	root: '1653519530862',
+	properties: '1653525968723',
+	root: '1653525968723',
 	nodes: {
-		lights: '1653519530862',
-		cameras: '1653519530862',
-		'cameras/cameraControls1': '1653519530862',
-		'cameras/cameraControls2': '1653519530862',
-		fxhash: '1653519530862',
-		'fxhash/actor1': '1653519530862',
-		'fxhash/MAT': '1653519530862',
-		'fxhash/MAT/meshStandardBuilder3': '1653519530862',
-		floor: '1653519530862',
-		'floor/MAT': '1653519530862',
+		lights: '1653525968723',
+		cameras: '1653525968723',
+		'cameras/cameraControls1': '1653525968723',
+		'cameras/cameraControls2': '1653525968723',
+		fxhash: '1653525968723',
+		'fxhash/actor1': '1653525968723',
+		'fxhash/MAT': '1653525968723',
+		'fxhash/MAT/meshStandardBuilder3': '1653525968723',
+		floor: '1653525968723',
+		'floor/MAT': '1653525968723',
 	},
 };
 
