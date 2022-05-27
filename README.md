@@ -1,5 +1,11 @@
-Created with [Polygonjs](https://polygonjs.com)
+# Create interactive artworks for fxhash - without coding
 
+This is a demo project showing how to publish [Polygonjs](https://polygonjs.com) scenes to [fxhash](https://www.fxhash.xyz/)
+
+- [read tutorial on Polygonjs](https://polygonjs.com/docs/integrations/fxhash)
+- [watch on youtube](https://www.youtube.com/watch?v=PuRCxj28_Gg)
+
+![fxhash demo](https://github.com/polygonjs/polygonjs-assets/blob/master/tutorials/fxhash/fxhash.gif?raw=true)
 # Open Polygonjs Editor
 
 - 1: install dependencies, with `yarn` or `npm install`
